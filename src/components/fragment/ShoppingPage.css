@@ -1,0 +1,46 @@
+.category {
+    background-color: white;
+    border: 1px solid lightgrey;
+    color: black;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+    
+  }
+
+  .selectedCategory {
+    background-color:  #87cefa;
+    border: 1px solid lightgrey;
+    color: black;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+ 
+
+  .category:hover{
+    /* background-color: white; */
+    background : linear-gradient(285deg, #ddb008, #f76b1c);
+    border: 1px solid lightgrey;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25px; 
+    display: inline-flex;
+    /* vertical-align: middle; */
+  }

@@ -1,0 +1,82 @@
+.Shopping-card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  height: 80vh;
+}
+.Shopping-card-container .Shopping-card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 10px;
+  flex-basis: 15%;
+}
+.Shopping-card-container .Shopping-card .Shopping-card-cover {
+  position: relative;
+}
+.Shopping-card-container .Shopping-card .Shopping-card-cover img {
+  width: 150px;
+  height: 150px;
+}
+.Shopping-card-container .Shopping-card .Shopping-card-cover .play-circle {
+  position: absolute;
+  left: calc(50% - 15% - 10px);
+  top: calc(50% - 15% - 10px);
+  visibility: hidden;
+  font-size: 4rem;
+}
+.Shopping-card-container .Shopping-card .Shopping-card-cover .hover-img {
+  visibility: visible;
+}
+.Shopping-card-container .Shopping-card .Shopping-card-cover:hover {
+  cursor: pointer;
+}
+.Shopping-card-container .Shopping-card .Shopping-card-cover:hover img {
+  filter: blur(1.5px);
+}
+.Shopping-card-container .Shopping-card .Shopping-card-cover:hover .play-circle {
+  color: #d91a40;
+  visibility: visible;
+}
+.Shopping-card-container .Shopping-card .Shopping-card-details .song-name {
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+.Shopping-card-container .Shopping-card .Shopping-card-details .author-name {
+  font-weight: lighter;
+  color: gray;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d91a40;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media only screen and (max-width: 970px) {
+  .Shopping-card-container {
+    height: 70vh;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=ShoppingCardContainer.scss.map */
